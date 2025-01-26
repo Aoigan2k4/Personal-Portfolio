@@ -1,0 +1,115 @@
+
+        .center-container {
+            display: flex; 
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+            text-align: center;
+        }
+
+        #contact div {
+            display: flex;
+            justify-content: center;
+            gap: 1rem; 
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #1e1c1c;
+            color: #FFBD59;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background: #000000;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: #FFBD59;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+        }
+
+        nav a:hover {
+            background: #FFBD59;
+            color: #f4f4f4
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        .about-me, .projects, .resume, .contact {
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        h1, h2 {
+            color: #FFBD59;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .project-item {
+            margin-bottom: 1rem;
+        }
+
+        .round-rectangle {
+            width: 350px; 
+            height: 200px; 
+            border-radius: 20px; 
+            object-fit: cover; 
+            display: block; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+        }
+        
+        .image-container {
+            position: relative;
+            width: 350px;
+            height: 200px;
+            display: flex; 
+            gap: 2rem; 
+            display:inline-block;
+        }
+
+        .image-container:hover .round-rectangle {
+            transform: scale(1.05);
+            filter: brightness(0.8); 
+            cursor: pointer;
+        }
+
+        .overlay-text {
+            position: absolute;
+            bottom: 10%; 
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #FFFFFF;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            opacity: 0; 
+            transition: opacity 0.3s ease;
+        }
+
+        .image-container a:hover .overlay-text {
+            opacity: 1;
+        }
